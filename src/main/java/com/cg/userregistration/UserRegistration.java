@@ -5,7 +5,7 @@ import java.util.*;
 public class UserRegistration {
 	
 	public static void setPassword(String password) {
-		String regex = "[^.]{8,}$";
+		String regex = "^(?=^.).{8,}$";
 		if (password.matches(regex))
 			System.out.println("Mobile Number is Valid");
 		else
