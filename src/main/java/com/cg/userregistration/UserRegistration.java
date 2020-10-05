@@ -21,7 +21,7 @@ public class UserRegistration {
 	}
 
 	public static void email(String emailId) {
-		String regex = "^[a-z0-9+_.-]+@[a-z0-9.-]+$";
+		String regex = "^[_a-z0-9-\\+]+(\\.[_a-z0-9-]+)*@[a-z0-9]+(\\.[a-z0-9]+)*(\\.[a-z]{2,})$";;
 		if (emailId.matches(regex))
 			System.out.println("EmailId is Valid");
 		else
